@@ -26,9 +26,11 @@ class CalculatorViewController: UIViewController {
         sender.isSelected = true
         //get current title of pressed button
         let buttonTitle = sender.currentTitle!
-        //drop 
+        //remove last string character (%) from current title of pressed button
         let buttonTitleMinusPercnetSign = String(buttonTitle.dropLast())
+        //turn string into a double
         let buttonTitleAsNumber = Double(buttonTitleMinusPercnetSign)!
+        //divide the percent
         tip = buttonTitleAsNumber / 100
 
     }
