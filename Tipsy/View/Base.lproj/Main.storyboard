@@ -200,7 +200,7 @@
                     </view>
                     <connections>
                         <outlet property="billTextField" destination="wcN-ka-Q4F" id="j8C-Km-aQz"/>
-                        <outlet property="splitNumberLabel" destination="bSy-Yc-886" id="E2V-O7-oCR"/>
+                        <outlet property="splitNumberLabel" destination="bSy-Yc-886" id="woe-4R-x5m"/>
                         <outlet property="tenPctButton" destination="7y6-Kf-yF0" id="ZQA-me-jB8"/>
                         <outlet property="twentyPctButton" destination="UtR-dU-EKt" id="Nb2-TN-RVa"/>
                         <outlet property="zeroPctButton" destination="XzR-0E-Xf7" id="IV4-KP-Xz0"/>
