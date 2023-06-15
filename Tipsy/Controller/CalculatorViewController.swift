@@ -17,10 +17,12 @@ class CalculatorViewController: UIViewController {
     
     var tip = 0.0
     var numberOfPeople = 2
-    var bilTotal = 0.0
+    var billTotal = 0.0
     var finalResult = "0.0"
 
     @IBAction func tipChanged(_ sender: UIButton) {
+        
+        billTextField.endEditing(true)
         
         //Deselect all button that triggered
         zeroPctButton.isSelected = false
@@ -49,10 +51,13 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
-        
-        print(tip)
-        
-        print(numberOfPeople)
+        let bill = billTextField.text!
+        if bill != "" {
+            billTotal = Double(bill)!
+            let result = billTotal * (1 + tip) / Double(numberOfPeople)
+            finalResult = String(format: "%.2f", result)
+        }
+        print(finalResult)
     }
     
 
